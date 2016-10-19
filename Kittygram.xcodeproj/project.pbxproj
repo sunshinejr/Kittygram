@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1400607D1DB145940010A7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400607C1DB145940010A7A2 /* AppDelegate.swift */; };
+		140060841DB145940010A7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140060831DB145940010A7A2 /* Assets.xcassets */; };
+		140060871DB145940010A7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140060851DB145940010A7A2 /* LaunchScreen.storyboard */; };
+		140060951DB423080010A7A2 /* KittygramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140060941DB423080010A7A2 /* KittygramTests.swift */; };
+		14FBA72C1DB7D7CF006F152F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBA72A1DB7D7CF006F152F /* DashboardViewController.swift */; };
+		14FBA72D1DB7D7CF006F152F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FBA72B1DB7D7CF006F152F /* DashboardViewController.xib */; };
+		14FBA7301DB7D8D6006F152F /* PayMoneyPleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBA72E1DB7D8D6006F152F /* PayMoneyPleaseViewController.swift */; };
+		14FBA7311DB7D8D6006F152F /* PayMoneyPleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FBA72F1DB7D8D6006F152F /* PayMoneyPleaseViewController.xib */; };
+		14FBA7361DB7DB4B006F152F /* KittyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBA7341DB7DB4B006F152F /* KittyTableViewCell.swift */; };
+		14FBA7371DB7DB4B006F152F /* KittyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FBA7351DB7DB4B006F152F /* KittyTableViewCell.xib */; };
+		63FA13E6EBFDCE5801286D50 /* Pods_KittygramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823779B59F71F5FE69127EE /* Pods_KittygramTests.framework */; };
+		8227AC7569FF0899F7827D5B /* Pods_Kittygram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B51AF1491E6560C7946A71D /* Pods_Kittygram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		140060971DB423080010A7A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 140060711DB145940010A7A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 140060781DB145940010A7A2;
+			remoteInfo = Kittygram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		140060791DB145940010A7A2 /* Kittygram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kittygram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1400607C1DB145940010A7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		140060831DB145940010A7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		140060861DB145940010A7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		140060881DB145940010A7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140060921DB423080010A7A2 /* KittygramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittygramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		140060941DB423080010A7A2 /* KittygramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittygramTests.swift; sourceTree = "<group>"; };
+		140060961DB423080010A7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14FBA72A1DB7D7CF006F152F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ViewControllers/Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
+		14FBA72B1DB7D7CF006F152F /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardViewController.xib; path = ViewControllers/Dashboard/DashboardViewController.xib; sourceTree = "<group>"; };
+		14FBA72E1DB7D8D6006F152F /* PayMoneyPleaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayMoneyPleaseViewController.swift; path = ViewControllers/PayMoneyPlease/PayMoneyPleaseViewController.swift; sourceTree = "<group>"; };
+		14FBA72F1DB7D8D6006F152F /* PayMoneyPleaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PayMoneyPleaseViewController.xib; path = ViewControllers/PayMoneyPlease/PayMoneyPleaseViewController.xib; sourceTree = "<group>"; };
+		14FBA7341DB7DB4B006F152F /* KittyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KittyTableViewCell.swift; path = ViewControllers/Dashboard/Views/KittyTableViewCell.swift; sourceTree = "<group>"; };
+		14FBA7351DB7DB4B006F152F /* KittyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KittyTableViewCell.xib; path = ViewControllers/Dashboard/Views/KittyTableViewCell.xib; sourceTree = "<group>"; };
+		5B51AF1491E6560C7946A71D /* Pods_Kittygram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kittygram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823779B59F71F5FE69127EE /* Pods_KittygramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittygramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		930ED593D620E77D442B8B74 /* Pods-KittygramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittygramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KittygramTests/Pods-KittygramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADBCA20A97795345522B2A90 /* Pods-Kittygram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kittygram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kittygram/Pods-Kittygram.release.xcconfig"; sourceTree = "<group>"; };
+		E12AD690597F9DCDD35297AC /* Pods-Kittygram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kittygram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kittygram/Pods-Kittygram.debug.xcconfig"; sourceTree = "<group>"; };
+		F60DDE9F679347535AE87C9E /* Pods-KittygramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittygramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KittygramTests/Pods-KittygramTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		140060761DB145940010A7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8227AC7569FF0899F7827D5B /* Pods_Kittygram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1400608F1DB423080010A7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FA13E6EBFDCE5801286D50 /* Pods_KittygramTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095E02F7E8ECDE5A8C375789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E12AD690597F9DCDD35297AC /* Pods-Kittygram.debug.xcconfig */,
+				ADBCA20A97795345522B2A90 /* Pods-Kittygram.release.xcconfig */,
+				930ED593D620E77D442B8B74 /* Pods-KittygramTests.debug.xcconfig */,
+				F60DDE9F679347535AE87C9E /* Pods-KittygramTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		140060701DB145940010A7A2 = {
+			isa = PBXGroup;
+			children = (
+				1400607B1DB145940010A7A2 /* Kittygram */,
+				140060931DB423080010A7A2 /* KittygramTests */,
+				1400607A1DB145940010A7A2 /* Products */,
+				095E02F7E8ECDE5A8C375789 /* Pods */,
+				C1BFC0305B48E198B9750603 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1400607A1DB145940010A7A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				140060791DB145940010A7A2 /* Kittygram.app */,
+				140060921DB423080010A7A2 /* KittygramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1400607B1DB145940010A7A2 /* Kittygram */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA7271DB7D6C2006F152F /* ViewControllers */,
+				1400607C1DB145940010A7A2 /* AppDelegate.swift */,
+				140060831DB145940010A7A2 /* Assets.xcassets */,
+				140060851DB145940010A7A2 /* LaunchScreen.storyboard */,
+				140060881DB145940010A7A2 /* Info.plist */,
+			);
+			path = Kittygram;
+			sourceTree = "<group>";
+		};
+		140060931DB423080010A7A2 /* KittygramTests */ = {
+			isa = PBXGroup;
+			children = (
+				140060941DB423080010A7A2 /* KittygramTests.swift */,
+				140060961DB423080010A7A2 /* Info.plist */,
+			);
+			path = KittygramTests;
+			sourceTree = "<group>";
+		};
+		14FBA7271DB7D6C2006F152F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA7291DB7D776006F152F /* PayMoneyPlease */,
+				14FBA7281DB7D76E006F152F /* Dashboard */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14FBA7281DB7D76E006F152F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA7321DB7DAFC006F152F /* Views */,
+				14FBA72A1DB7D7CF006F152F /* DashboardViewController.swift */,
+				14FBA72B1DB7D7CF006F152F /* DashboardViewController.xib */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		14FBA7291DB7D776006F152F /* PayMoneyPlease */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA72E1DB7D8D6006F152F /* PayMoneyPleaseViewController.swift */,
+				14FBA72F1DB7D8D6006F152F /* PayMoneyPleaseViewController.xib */,
+			);
+			name = PayMoneyPlease;
+			sourceTree = "<group>";
+		};
+		14FBA7321DB7DAFC006F152F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA7331DB7DB2A006F152F /* KittyTableViewCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		14FBA7331DB7DB2A006F152F /* KittyTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14FBA7341DB7DB4B006F152F /* KittyTableViewCell.swift */,
+				14FBA7351DB7DB4B006F152F /* KittyTableViewCell.xib */,
+			);
+			name = KittyTableViewCell;
+			sourceTree = "<group>";
+		};
+		C1BFC0305B48E198B9750603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B51AF1491E6560C7946A71D /* Pods_Kittygram.framework */,
+				6823779B59F71F5FE69127EE /* Pods_KittygramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		140060781DB145940010A7A2 /* Kittygram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1400608B1DB145940010A7A2 /* Build configuration list for PBXNativeTarget "Kittygram" */;
+			buildPhases = (
+				313F4F99DDB1998CEC875794 /* [CP] Check Pods Manifest.lock */,
+				140060751DB145940010A7A2 /* Sources */,
+				140060761DB145940010A7A2 /* Frameworks */,
+				140060771DB145940010A7A2 /* Resources */,
+				4023D362C2682F593A7486A0 /* [CP] Embed Pods Frameworks */,
+				90FE53901E0CF20CA566641C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kittygram;
+			productName = Kittygram;
+			productReference = 140060791DB145940010A7A2 /* Kittygram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		140060911DB423080010A7A2 /* KittygramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 140060991DB423080010A7A2 /* Build configuration list for PBXNativeTarget "KittygramTests" */;
+			buildPhases = (
+				56F46FF689B19BB39E469945 /* [CP] Check Pods Manifest.lock */,
+				1400608E1DB423080010A7A2 /* Sources */,
+				1400608F1DB423080010A7A2 /* Frameworks */,
+				140060901DB423080010A7A2 /* Resources */,
+				C9042650511AE45C0EBE1A28 /* [CP] Embed Pods Frameworks */,
+				DE2CF569AC0249B7F9A6B4A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				140060981DB423080010A7A2 /* PBXTargetDependency */,
+			);
+			name = KittygramTests;
+			productName = KittygramTests;
+			productReference = 140060921DB423080010A7A2 /* KittygramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		140060711DB145940010A7A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Sunshinejr;
+				TargetAttributes = {
+					140060781DB145940010A7A2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CCHRC6DB43;
+						ProvisioningStyle = Automatic;
+					};
+					140060911DB423080010A7A2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 53CHNC6J63;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 140060781DB145940010A7A2;
+					};
+				};
+			};
+			buildConfigurationList = 140060741DB145940010A7A2 /* Build configuration list for PBXProject "Kittygram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 140060701DB145940010A7A2;
+			productRefGroup = 1400607A1DB145940010A7A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				140060781DB145940010A7A2 /* Kittygram */,
+				140060911DB423080010A7A2 /* KittygramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		140060771DB145940010A7A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBA7311DB7D8D6006F152F /* PayMoneyPleaseViewController.xib in Resources */,
+				140060871DB145940010A7A2 /* LaunchScreen.storyboard in Resources */,
+				14FBA7371DB7DB4B006F152F /* KittyTableViewCell.xib in Resources */,
+				140060841DB145940010A7A2 /* Assets.xcassets in Resources */,
+				14FBA72D1DB7D7CF006F152F /* DashboardViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140060901DB423080010A7A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		313F4F99DDB1998CEC875794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4023D362C2682F593A7486A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kittygram/Pods-Kittygram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F46FF689B19BB39E469945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90FE53901E0CF20CA566641C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kittygram/Pods-Kittygram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9042650511AE45C0EBE1A28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittygramTests/Pods-KittygramTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2CF569AC0249B7F9A6B4A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittygramTests/Pods-KittygramTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		140060751DB145940010A7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FBA72C1DB7D7CF006F152F /* DashboardViewController.swift in Sources */,
+				1400607D1DB145940010A7A2 /* AppDelegate.swift in Sources */,
+				14FBA7301DB7D8D6006F152F /* PayMoneyPleaseViewController.swift in Sources */,
+				14FBA7361DB7DB4B006F152F /* KittyTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1400608E1DB423080010A7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140060951DB423080010A7A2 /* KittygramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		140060981DB423080010A7A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 140060781DB145940010A7A2 /* Kittygram */;
+			targetProxy = 140060971DB423080010A7A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		140060851DB145940010A7A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				140060861DB145940010A7A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		140060891DB145940010A7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1400608A1DB145940010A7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1400608C1DB145940010A7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12AD690597F9DCDD35297AC /* Pods-Kittygram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CCHRC6DB43;
+				INFOPLIST_FILE = Kittygram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1400608D1DB145940010A7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADBCA20A97795345522B2A90 /* Pods-Kittygram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CCHRC6DB43;
+				INFOPLIST_FILE = Kittygram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1400609A1DB423080010A7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930ED593D620E77D442B8B74 /* Pods-KittygramTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53CHNC6J63;
+				INFOPLIST_FILE = KittygramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.KittygramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kittygram.app/Kittygram";
+			};
+			name = Debug;
+		};
+		1400609B1DB423080010A7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60DDE9F679347535AE87C9E /* Pods-KittygramTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53CHNC6J63;
+				INFOPLIST_FILE = KittygramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.KittygramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kittygram.app/Kittygram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		140060741DB145940010A7A2 /* Build configuration list for PBXProject "Kittygram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140060891DB145940010A7A2 /* Debug */,
+				1400608A1DB145940010A7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1400608B1DB145940010A7A2 /* Build configuration list for PBXNativeTarget "Kittygram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1400608C1DB145940010A7A2 /* Debug */,
+				1400608D1DB145940010A7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		140060991DB423080010A7A2 /* Build configuration list for PBXNativeTarget "KittygramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1400609A1DB423080010A7A2 /* Debug */,
+				1400609B1DB423080010A7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 140060711DB145940010A7A2 /* Project object */;
+}
