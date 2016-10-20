@@ -11,6 +11,12 @@
 		140060841DB145940010A7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140060831DB145940010A7A2 /* Assets.xcassets */; };
 		140060871DB145940010A7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140060851DB145940010A7A2 /* LaunchScreen.storyboard */; };
 		140060951DB423080010A7A2 /* KittygramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140060941DB423080010A7A2 /* KittygramTests.swift */; };
+		142B150B1DB91DC400957C63 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B150A1DB91DC400957C63 /* RepositoryModel.swift */; };
+		142B150D1DB91DE800957C63 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B150C1DB91DE800957C63 /* UserModel.swift */; };
+		142B15101DB91E6700957C63 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B150F1DB91E6700957C63 /* GitHub.swift */; };
+		142B15131DB9318C00957C63 /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B15121DB9318C00957C63 /* Cordinator.swift */; };
+		149BD3221DB97B92000879F3 /* KittyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BD3201DB97B92000879F3 /* KittyDetailsViewController.swift */; };
+		149BD3231DB97B92000879F3 /* KittyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149BD3211DB97B92000879F3 /* KittyDetailsViewController.xib */; };
 		14FBA72C1DB7D7CF006F152F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBA72A1DB7D7CF006F152F /* DashboardViewController.swift */; };
 		14FBA72D1DB7D7CF006F152F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FBA72B1DB7D7CF006F152F /* DashboardViewController.xib */; };
 		14FBA7301DB7D8D6006F152F /* PayMoneyPleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBA72E1DB7D8D6006F152F /* PayMoneyPleaseViewController.swift */; };
@@ -40,6 +46,12 @@
 		140060921DB423080010A7A2 /* KittygramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittygramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		140060941DB423080010A7A2 /* KittygramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittygramTests.swift; sourceTree = "<group>"; };
 		140060961DB423080010A7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142B150A1DB91DC400957C63 /* RepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryModel.swift; path = Networking/Models/RepositoryModel.swift; sourceTree = "<group>"; };
+		142B150C1DB91DE800957C63 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = Networking/Models/UserModel.swift; sourceTree = "<group>"; };
+		142B150F1DB91E6700957C63 /* GitHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GitHub.swift; path = Networking/Endpoints/GitHub.swift; sourceTree = "<group>"; };
+		142B15121DB9318C00957C63 /* Cordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cordinator.swift; path = Coordinator/Cordinator.swift; sourceTree = "<group>"; };
+		149BD3201DB97B92000879F3 /* KittyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KittyDetailsViewController.swift; path = ViewControllers/KittyDetails/KittyDetailsViewController.swift; sourceTree = "<group>"; };
+		149BD3211DB97B92000879F3 /* KittyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KittyDetailsViewController.xib; path = ViewControllers/KittyDetails/KittyDetailsViewController.xib; sourceTree = "<group>"; };
 		14FBA72A1DB7D7CF006F152F /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ViewControllers/Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
 		14FBA72B1DB7D7CF006F152F /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardViewController.xib; path = ViewControllers/Dashboard/DashboardViewController.xib; sourceTree = "<group>"; };
 		14FBA72E1DB7D8D6006F152F /* PayMoneyPleaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayMoneyPleaseViewController.swift; path = ViewControllers/PayMoneyPlease/PayMoneyPleaseViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +120,8 @@
 		1400607B1DB145940010A7A2 /* Kittygram */ = {
 			isa = PBXGroup;
 			children = (
+				142B15111DB9315400957C63 /* Coordinators */,
+				142B15081DB9123600957C63 /* Networking */,
 				14FBA7271DB7D6C2006F152F /* ViewControllers */,
 				1400607C1DB145940010A7A2 /* AppDelegate.swift */,
 				140060831DB145940010A7A2 /* Assets.xcassets */,
@@ -126,9 +140,53 @@
 			path = KittygramTests;
 			sourceTree = "<group>";
 		};
+		142B15081DB9123600957C63 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				142B150E1DB91E4000957C63 /* Endpoints */,
+				142B15091DB91DAC00957C63 /* Models */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		142B15091DB91DAC00957C63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				142B150A1DB91DC400957C63 /* RepositoryModel.swift */,
+				142B150C1DB91DE800957C63 /* UserModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		142B150E1DB91E4000957C63 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				142B150F1DB91E6700957C63 /* GitHub.swift */,
+			);
+			name = Endpoints;
+			sourceTree = "<group>";
+		};
+		142B15111DB9315400957C63 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				142B15121DB9318C00957C63 /* Cordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		149BD31F1DB97B70000879F3 /* KittyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				149BD3201DB97B92000879F3 /* KittyDetailsViewController.swift */,
+				149BD3211DB97B92000879F3 /* KittyDetailsViewController.xib */,
+			);
+			name = KittyDetails;
+			sourceTree = "<group>";
+		};
 		14FBA7271DB7D6C2006F152F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				149BD31F1DB97B70000879F3 /* KittyDetails */,
 				14FBA7291DB7D776006F152F /* PayMoneyPlease */,
 				14FBA7281DB7D76E006F152F /* Dashboard */,
 			);
@@ -276,6 +334,7 @@
 				14FBA7371DB7DB4B006F152F /* KittyTableViewCell.xib in Resources */,
 				140060841DB145940010A7A2 /* Assets.xcassets in Resources */,
 				14FBA72D1DB7D7CF006F152F /* DashboardViewController.xib in Resources */,
+				149BD3231DB97B92000879F3 /* KittyDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +446,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14FBA72C1DB7D7CF006F152F /* DashboardViewController.swift in Sources */,
+				142B150B1DB91DC400957C63 /* RepositoryModel.swift in Sources */,
 				1400607D1DB145940010A7A2 /* AppDelegate.swift in Sources */,
+				142B15101DB91E6700957C63 /* GitHub.swift in Sources */,
+				149BD3221DB97B92000879F3 /* KittyDetailsViewController.swift in Sources */,
+				142B15131DB9318C00957C63 /* Cordinator.swift in Sources */,
 				14FBA7301DB7D8D6006F152F /* PayMoneyPleaseViewController.swift in Sources */,
+				142B150D1DB91DE800957C63 /* UserModel.swift in Sources */,
 				14FBA7361DB7DB4B006F152F /* KittyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

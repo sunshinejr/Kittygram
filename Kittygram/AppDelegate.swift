@@ -14,14 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        var rootViewController: UIViewController!
-//        if arc4random_uniform(5) % 1 == 0 {
-//            rootViewController = PayMoneyPleaseViewController()
-//        } else {
-            rootViewController = DashboardViewController()
-//        }
-        
         window = UIWindow()
+
+        var rootViewController: UIViewController!
+        if arc4random_uniform(5) % 1 == 0 {
+            rootViewController = PayMoneyPleaseViewController()
+        } else {
+            rootViewController = DashboardViewController()
+        }
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
         

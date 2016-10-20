@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'Kittygram' do
   use_frameworks!
 
-  pod 'Moya-ModelMapper', '4.0.0-beta.2'
+  pod 'Moya-ModelMapper/RxSwift', '4.0.0-beta.2'
 
   target 'KittygramTests' do
     inherit! :search_paths
