@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class KittyTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    private var disposeBag = DisposeBag()
+    
+    var viewModel: KittyTableViewModelType? {
+        willSet {
+            disposeBag = DisposeBag()
+        }
+        didSet {
+            setupBindings()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setupBindings() {
+        guard let viewModel = viewModel, let textLabel = textLabel else { return }
+        
+        viewModel.name.bindTo(textLabel.rx.text).addDisposableTo(disposeBag)
     }
 }

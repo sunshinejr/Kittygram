@@ -12,17 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var coordinator: Coordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-
-        var rootViewController: UIViewController!
-        if arc4random_uniform(5) % 1 == 0 {
-            rootViewController = PayMoneyPleaseViewController()
-        } else {
-            rootViewController = DashboardViewController()
-        }
-        window?.rootViewController = UINavigationController(rootViewController: rootViewController)
+        let navigationController = UINavigationController()
+        window?.rootViewController = navigationController
+        let coordinator = AppCoordinator(navigationController: navigationController)
+        coordinator.start()
         window?.makeKeyAndVisible()
         
         return true
