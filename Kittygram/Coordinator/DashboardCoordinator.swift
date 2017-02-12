@@ -1,5 +1,5 @@
 //
-//  DashboardCoordinator.swift
+//  PayMoneyPleaseCoordinator.swift
 //  Kittygram
 //
 //  Created by Lukasz Mroz on 22.10.2016.
@@ -8,24 +8,23 @@
 
 import UIKit
 
-final class PayMoneyPleaseCoordinator: Coordinator {
-    
-    var appCoordinator: AppCoordinator?
-    
-    convenience init(navigationController: UINavigationController?, appCoordinator: AppCoordinator?) {
-        self.init(navigationController: navigationController)
-        
-        self.appCoordinator = appCoordinator
-    }
+final class DashboardCoordinator: Coordinator {
     
     func start() {
-        let viewController = PayMoneyPleaseViewController()
+        let viewModel = DashboardViewModel(delegate: self)
+        let viewController = DashboardViewController(viewModel: viewModel)
         
         navigationController?.pushViewController(viewController, animated: true)
     }
-    
-    func stop() {
-        _ = navigationController?.popViewController(animated: true)
-        appCoordinator?.payMoneyPleaseCoordinatorCompleted(coordinator: self)
+}
+
+extension DashboardCoordinator: DashboardViewControllerDelegate {
+    func kittySelected(repo: Repository) {
+        if repo.name != "swift" {
+            let viewController = KittyDetailsViewController(kitty: repo)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            print("Unexpected behavior")
+        }
     }
 }
