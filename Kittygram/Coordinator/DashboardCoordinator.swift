@@ -1,5 +1,5 @@
 //
-//  PayMoneyPleaseCoordinator.swift
+//  DashboardCoordinator.swift
 //  Kittygram
 //
 //  Created by Lukasz Mroz on 22.10.2016.
