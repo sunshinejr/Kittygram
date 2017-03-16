@@ -38,7 +38,9 @@ class DashboardViewController: UIViewController {
         let nib = UINib(nibName: "KittyTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "kittyCell")
         
-        tableView.rx.itemSelected.bindTo(viewModel.itemSelected).addDisposableTo(disposeBag)
+        tableView.rx.itemSelected
+            .bindTo(viewModel.itemSelected)
+            .addDisposableTo(disposeBag)
         
         viewModel.reposObservable
             .bindTo(tableView.rx.items) { tableView, i, item in
