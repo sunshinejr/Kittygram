@@ -7,18 +7,28 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class KittyDetailsViewController: UIViewController {
 
-    var kitty: Repository!
+    var kittyDetailsViewModel: KittyDetailsViewModel!
+    let disposeBag = DisposeBag()
     
     convenience init(kitty: Repository) {
         self.init()
-        
-        self.kitty = kitty
+        self.kittyDetailsViewModel = KittyDetailsViewModel(repository: kitty)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpRx()
+    }
+    
+    private func setUpRx() {
+        kittyDetailsViewModel
+            .language
+            .bindTo(self.navigationItem.rx.title)
+            .addDisposableTo(disposeBag)
     }
 }
