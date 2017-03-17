@@ -10,9 +10,9 @@ import Foundation
 import RxSwift
 
 struct KittyDetailsViewModel {
+    let language = BehaviorSubject<String?>(value: "")
+    
     init(repository: Repository) {
         language.onNext(repository.language)
     }
-    let language = BehaviorSubject<String?>(value: "")
-
 }

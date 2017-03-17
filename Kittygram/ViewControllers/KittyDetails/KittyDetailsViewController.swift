@@ -15,17 +15,17 @@ class KittyDetailsViewController: UIViewController {
     var kittyDetailsViewModel: KittyDetailsViewModel!
     let disposeBag = DisposeBag()
     
-    convenience init(kitty: Repository) {
+    convenience init(viewModel: KittyDetailsViewModel) {
         self.init()
-        self.kittyDetailsViewModel = KittyDetailsViewModel(repository: kitty)
+        self.kittyDetailsViewModel = viewModel
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpRx()
+        setupRx()
     }
     
-    private func setUpRx() {
+    private func setupRx() {
         kittyDetailsViewModel
             .language
             .bindTo(self.navigationItem.rx.title)
