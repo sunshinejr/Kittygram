@@ -636,7 +636,7 @@
 				DEVELOPMENT_TEAM = P75L6RL67A;
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -650,7 +650,7 @@
 				DEVELOPMENT_TEAM = P75L6RL67A;
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
