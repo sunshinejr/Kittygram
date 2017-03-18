@@ -334,7 +334,6 @@
 				TargetAttributes = {
 					140060781DB145940010A7A2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P75L6RL67A;
 						ProvisioningStyle = Automatic;
 					};
 					140060911DB423080010A7A2 = {
@@ -633,7 +632,7 @@
 			baseConfigurationReference = E12AD690597F9DCDD35297AC /* Pods-Kittygram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P75L6RL67A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
@@ -647,7 +646,7 @@
 			baseConfigurationReference = ADBCA20A97795345522B2A90 /* Pods-Kittygram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P75L6RL67A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
