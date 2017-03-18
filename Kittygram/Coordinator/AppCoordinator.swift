@@ -12,15 +12,15 @@ import UIKit
 final class AppCoordinator: Coordinator {
     
     func start() {
-//        if arc4random_uniform(3) % 2 == 0 {
-//            let coordinator = PayMoneyPleaseCoordinator(navigationController: navigationController, appCoordinator: self)
-//            coordinator.start()
-//            childCoordinators.append(coordinator)
-//        } else {
+        if arc4random_uniform(3) % 2 == 0 {
+            let coordinator = PayMoneyPleaseCoordinator(navigationController: navigationController, appCoordinator: self)
+            coordinator.start()
+            childCoordinators.append(coordinator)
+        } else {
             let coordinator = DashboardCoordinator(navigationController: navigationController)
             coordinator.start()
             childCoordinators.append(coordinator)
-//        }
+        }
     }
     
     func payMoneyPleaseCoordinatorCompleted(coordinator: PayMoneyPleaseCoordinator) {
