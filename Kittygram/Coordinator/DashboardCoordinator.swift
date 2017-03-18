@@ -1,5 +1,5 @@
 //
-//  PayMoneyPleaseCoordinator.swift
+//  DashboardCoordinator.swift
 //  Kittygram
 //
 //  Created by Lukasz Mroz on 22.10.2016.
@@ -21,7 +21,8 @@ final class DashboardCoordinator: Coordinator {
 extension DashboardCoordinator: DashboardViewControllerDelegate {
     func kittySelected(repo: Repository) {
         if repo.name != "swift" {
-            let viewController = KittyDetailsViewController(kitty: repo)
+            let viewModelKitty = KittyDetailsViewModel(repository: repo)
+            let viewController = KittyDetailsViewController(viewModel: viewModelKitty)
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
             print("Unexpected behavior")

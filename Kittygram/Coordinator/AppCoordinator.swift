@@ -12,7 +12,7 @@ import UIKit
 final class AppCoordinator: Coordinator {
     
     func start() {
-        if arc4random_uniform(5) % 4 == 0 {
+        if arc4random_uniform(3) % 2 == 0 {
             let coordinator = PayMoneyPleaseCoordinator(navigationController: navigationController, appCoordinator: self)
             coordinator.start()
             childCoordinators.append(coordinator)

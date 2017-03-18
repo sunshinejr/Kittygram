@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8C94631E7A3E75000E18D8 /* KittyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C94621E7A3E75000E18D8 /* KittyDetailsViewModel.swift */; };
 		1400607D1DB145940010A7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1400607C1DB145940010A7A2 /* AppDelegate.swift */; };
 		140060841DB145940010A7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140060831DB145940010A7A2 /* Assets.xcassets */; };
 		140060871DB145940010A7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140060851DB145940010A7A2 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E8C94621E7A3E75000E18D8 /* KittyDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittyDetailsViewModel.swift; sourceTree = "<group>"; };
 		140060791DB145940010A7A2 /* Kittygram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kittygram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1400607C1DB145940010A7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		140060831DB145940010A7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				149BD3201DB97B92000879F3 /* KittyDetailsViewController.swift */,
+				0E8C94621E7A3E75000E18D8 /* KittyDetailsViewModel.swift */,
 				149BD3211DB97B92000879F3 /* KittyDetailsViewController.xib */,
 			);
 			name = KittyDetails;
@@ -326,12 +329,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Sunshinejr;
 				TargetAttributes = {
 					140060781DB145940010A7A2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CCHRC6DB43;
 						ProvisioningStyle = Automatic;
 					};
 					140060911DB423080010A7A2 = {
@@ -490,6 +492,7 @@
 				1476CB981DBA3820000B18C4 /* AppCoordinator.swift in Sources */,
 				1400607D1DB145940010A7A2 /* AppDelegate.swift in Sources */,
 				1476CB9B1DBA3997000B18C4 /* DashboardViewModel.swift in Sources */,
+				0E8C94631E7A3E75000E18D8 /* KittyDetailsViewModel.swift in Sources */,
 				142B15101DB91E6700957C63 /* GitHub.swift in Sources */,
 				14E3449E1DBACE4900EEA098 /* KittyTableViewModel.swift in Sources */,
 				149BD3221DB97B92000879F3 /* KittyDetailsViewController.swift in Sources */,
@@ -549,6 +552,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -598,6 +602,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -627,7 +632,7 @@
 			baseConfigurationReference = E12AD690597F9DCDD35297AC /* Pods-Kittygram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CCHRC6DB43;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;
@@ -641,7 +646,7 @@
 			baseConfigurationReference = ADBCA20A97795345522B2A90 /* Pods-Kittygram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CCHRC6DB43;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kittygram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.Kittygram;

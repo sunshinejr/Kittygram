@@ -17,14 +17,15 @@ final class DashboardViewModel: DashboardViewModelType {
     private let repos = Variable<[(Repository, KittyTableViewModelType)]>([])
     private let provider = MoyaProvider<GitHub>()
     private let disposeBag = DisposeBag()
-    private weak var delegate: DashboardViewControllerDelegate?
+    
+    var delegate: DashboardViewControllerDelegate?
     
     let itemSelected = PublishSubject<IndexPath>()
     
     lazy var errorObservable: Observable<String> = self.error.asObservable()
     lazy var reposObservable: Observable<[KittyTableViewModelType]> = self.repos.asObservable().map { $0.map { $0.1 } }
     
-    init(delegate: DashboardViewControllerDelegate?) {
+    init(delegate: DashboardViewControllerDelegate) {
         self.delegate = delegate
         
         itemSelected
@@ -32,11 +33,11 @@ final class DashboardViewModel: DashboardViewModelType {
             .subscribe(onNext: { [weak self] repo in
                 guard let `self` = self, let repo = repo else { return }
                 
-                self.delegate?.kittySelected(repo: repo.0)
+                `self`.delegate?.kittySelected(repo: repo.0)
             })
             .addDisposableTo(disposeBag)
         
-        downloadRepositories("bartg")
+        downloadRepositories("apple")
     }
     
     func downloadRepositories(_ username: String) {
