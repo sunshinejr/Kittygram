@@ -12,5 +12,4 @@ protocol DashboardViewModelType {
     var errorObservable: Observable<String> { get }
     var reposObservable: Observable<[KittyTableViewModelType]> { get }
     var itemSelected: PublishSubject<IndexPath> { get }
-    var delegate: DashboardViewControllerDelegate? { get set}
 }

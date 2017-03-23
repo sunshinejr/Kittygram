@@ -7,25 +7,36 @@
 //
 
 import UIKit
+import RxSwift
 
 final class DashboardCoordinator: Coordinator {
+    var kittySelected = PublishSubject<Repository>()
+    let disposeBag = DisposeBag()
+    
+    override init(navigationController: UINavigationController?) {
+        super.init(navigationController: navigationController)
+        
+        kittySelected
+            .subscribe(onNext: { repo in
+                if repo.name != "swift" {
+                    let viewModelKitty = KittyDetailsViewModel(repository: repo)
+                    let viewController = KittyDetailsViewController(viewModel: viewModelKitty)
+                    self.navigationController?.pushViewController(viewController, animated: true)
+                } else {
+                    print("Unexpected behavior")
+                }
+            }).addDisposableTo(disposeBag)
+    }
     
     func start() {
-        let viewModel = DashboardViewModel(delegate: self)
+        let viewModel = DashboardViewModel()
         let viewController = DashboardViewController(viewModel: viewModel)
+        
+        viewModel.kittySelected.asObservable()
+            .bindTo(kittySelected)
+            .addDisposableTo(disposeBag)
         
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-extension DashboardCoordinator: DashboardViewControllerDelegate {
-    func kittySelected(repo: Repository) {
-        if repo.name != "swift" {
-            let viewModelKitty = KittyDetailsViewModel(repository: repo)
-            let viewController = KittyDetailsViewController(viewModel: viewModelKitty)
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else {
-            print("Unexpected behavior")
-        }
-    }
-}
