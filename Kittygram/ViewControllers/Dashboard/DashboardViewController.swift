@@ -43,16 +43,14 @@ class DashboardViewController: UIViewController, UITableViewDataSource, UITableV
             switch result {
             case let .success(response):
                 do {
-                    let repos = try response.mapArray() as [Repository]
+                    let repos = try response.map(to: Array.self) as [Repository]
                     self.repos = repos
                 } catch {
                     
                 }
                 self.tableView.reloadData()
             case let .failure(error):
-                guard let error = error as? CustomStringConvertible else {
-                    break
-                }
+                let error = error as CustomStringConvertible
                 self.showAlert("GitHub Fetch", message: error.description)
             }
         }
